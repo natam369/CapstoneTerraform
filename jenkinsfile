@@ -3,7 +3,7 @@ node {
   notify('Job Started') 
      
   stage('Git-Checkout') {
-   git 'https://github.com/SaiCharanUppari/terraformrepo.git'
+   git 'https://github.com/natam369/CapstoneTerraform.git'
   }
 	stage('AWS - Production Server Provisioning'){
 	   sh label: 'terraform', script: '/root/bin/terraform  init'
